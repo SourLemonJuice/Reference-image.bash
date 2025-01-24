@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # call a desktop image viewer, to show some image in clipboard
 
-image_path="/tmp/reference-image.bash/$(mktemp)"
+image_path="$(mktemp)"
 
 spectacle --background --nonotify --region --output "$image_path"
 echo "Temporary image path: ${image_path}"
